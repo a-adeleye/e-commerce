@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #000000;
+  font-family: "Poppins", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  background-color: #ffffff;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  height: 3.75em;
+  padding: 0 2em;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav--item {
+  text-decoration: none;
+  color: #000000;
+  margin-right: 3em;
+  font-weight: bold;
+  padding: 1.11em 1em;
+}
+
+.nav--item:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.cart {
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  background-color: #000000;
+  position: relative;
+  cursor: pointer;
+}
+
+.cart:hover {
+  transform: scale(1.1);
+}
+
+.cart i {
+  font-size: 1.2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+}
+
+.cart--count {
+  position: absolute;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 1.5em;
+  height: 1.5em;
+  bottom: 0;
+  background-color: #650400;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 0.8em;
 }
 
-.App-link {
-  color: #61dafb;
+.secondary-nav {
+  background-color: #a1a1a1;
+  height: 1.8em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.secondary-nav--item {
+  text-decoration: none;
+  color: #000000;
+  font-size: 0.8em;
+  padding: 0.4em 1em;
+}
+
+.secondary-nav--item:hover {
+  background-color: #424242;
+  color: #ffffff;
 }
