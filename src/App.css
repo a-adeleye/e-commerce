@@ -19,6 +19,7 @@ header {
 
 .logo {
   margin-right: auto;
+  cursor: pointer;
 }
 
 nav {
@@ -33,6 +34,7 @@ nav {
   margin-right: 3em;
   font-weight: bold;
   padding: 1.11em 1em;
+  transition: 0.2s;
 }
 
 .nav--item:hover {
@@ -51,6 +53,7 @@ nav {
 
 .cart:hover {
   transform: scale(1.1);
+  transition: 0.2s;
 }
 
 .cart i {
@@ -86,9 +89,64 @@ nav {
   color: #000000;
   font-size: 0.8em;
   padding: 0.4em 1em;
+  transition: 0.2s;
 }
 
 .secondary-nav--item:hover {
   background-color: #424242;
   color: #ffffff;
+}
+
+.homepage {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 80vh;
+  padding: 2em 5em;
+}
+
+.homepage--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #ffffff;
+  width: 500px;
+  font-size: 2em;
+}
+
+.homepage--text p {
+  font-size: 0.5em;
+  color: #a5a3a3;
+}
+
+.homepage--button {
+  width: 14em;
+  padding: 1em;
+  cursor: pointer;
+  font-size: large;
+  background-color: #ffffff;
+  border: none;
+  font-weight: bold;
+  border-radius: 0.5em;
+}
+
+.homepage--button:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+.homepage--image {
+  width: 38.4em;
+}
+
+.homepage--image img {
+  width: 100%;
+}
+
+footer {
+  color: #000000;
+  background-color: #a1a1a1;
+  text-align: center;
+  font-size: small;
+  padding: 0.16em;
 }
