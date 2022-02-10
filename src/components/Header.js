@@ -15,7 +15,6 @@ export default function Header(props) {
         <a href="#" className="nav--item">
           Login/Signup
         </a>
-        <i className="fas fa-bars menu"></i>
         <Link to="/cart">
           <div className="cart">
             <i className="fas fa-cart-plus"></i>
