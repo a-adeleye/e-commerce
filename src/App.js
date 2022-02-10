@@ -6,6 +6,7 @@ import Shop from "./components/Shop";
 import Footer from "./components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import products from "./components/Products";
+import Cart from './components/Cart'
 
 function App() {
   const [cart, setCart] = React.useState([]);
@@ -27,6 +28,7 @@ console.log(cart)
         <Routes>
           <Route path="/shop" element={<Shop onClick={addToCart} />}></Route>
           <Route path="/" element={<Homepage />}></Route>
+          <Route path="/cart" element={<Cart cart={cart}/>}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>
