@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/e-commerce/static/css/main.1079ddaf.css",
-    "main.js": "/e-commerce/static/js/main.1c4dd035.js",
+    "main.js": "/e-commerce/static/js/main.27143dc3.js",
     "static/js/787.906d05b1.chunk.js": "/e-commerce/static/js/787.906d05b1.chunk.js",
     "static/media/banner.png": "/e-commerce/static/media/banner.432a3042672e3f3b537b.png",
     "static/media/sportshoe.jpg": "/e-commerce/static/media/sportshoe.381d98427fff71536341.jpg",
@@ -24,11 +24,11 @@
     "static/media/dumbbell.jpg": "/e-commerce/static/media/dumbbell.111191ebb76b562f05be.jpg",
     "index.html": "/e-commerce/index.html",
     "main.1079ddaf.css.map": "/e-commerce/static/css/main.1079ddaf.css.map",
-    "main.1c4dd035.js.map": "/e-commerce/static/js/main.1c4dd035.js.map",
+    "main.27143dc3.js.map": "/e-commerce/static/js/main.27143dc3.js.map",
     "787.906d05b1.chunk.js.map": "/e-commerce/static/js/787.906d05b1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1079ddaf.css",
-    "static/js/main.1c4dd035.js"
+    "static/js/main.27143dc3.js"
   ]
 }
