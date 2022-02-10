@@ -18,6 +18,13 @@ header {
   padding: 0 2em;
 }
 
+i.menu {
+  font-size: 2em;
+  margin-right: 0.7em;
+  cursor: pointer;
+  display: none;
+}
+
 .logo {
   margin-right: auto;
   cursor: pointer;
@@ -441,6 +448,10 @@ footer {
 @media only screen and (max-width: 769px) {
   .nav--item {
     display: none;
+  }
+
+  i.menu {
+    display: block;
   }
 
   .secondary-nav {

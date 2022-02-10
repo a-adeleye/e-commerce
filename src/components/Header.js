@@ -15,6 +15,7 @@ export default function Header(props) {
         <a href="#" className="nav--item">
           Login/Signup
         </a>
+        <i className="fas fa-bars menu"></i>
         <Link to="/cart">
           <div className="cart">
             <i className="fas fa-cart-plus"></i>
@@ -29,14 +30,6 @@ export default function Header(props) {
 }
 
 export function SecondaryHeader() {
-  const linkStyle = {
-    textDecoration: "none",
-    color: "#000000",
-    marginRight: "3em",
-    padding: "0.5em 1em 0.3em",
-    fontSize: "0.8em",
-    transition: "0.2s",
-  };
 
   return (
     <nav className="secondary-nav">
