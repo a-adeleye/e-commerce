@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/e-commerce/static/css/main.1079ddaf.css",
+    "main.js": "/e-commerce/static/js/main.d3769fc4.js",
+    "static/js/787.d6fe38e8.chunk.js": "/e-commerce/static/js/787.d6fe38e8.chunk.js",
+    "static/media/banner.png": "/e-commerce/static/media/banner.432a3042672e3f3b537b.png",
+    "static/media/sportshoe.jpg": "/e-commerce/static/media/sportshoe.381d98427fff71536341.jpg",
+    "static/media/smartwatch.jpg": "/e-commerce/static/media/smartwatch.1b072b5655b45571d584.jpg",
+    "static/media/sportsshirt2.jpg": "/e-commerce/static/media/sportsshirt2.f0750149127cba5b48fe.jpg",
+    "static/media/women-wear.jpg": "/e-commerce/static/media/women-wear.7bb532444f0171f3e624.jpg",
+    "static/media/sportshirt3.jpg": "/e-commerce/static/media/sportshirt3.f415a4c791a7057a2cf9.jpg",
+    "static/media/boxingset.jpg": "/e-commerce/static/media/boxingset.7f92caf4675ee9b954d4.jpg",
+    "static/media/sportshirt5.jpg": "/e-commerce/static/media/sportshirt5.58defea86a6a6640363c.jpg",
+    "static/media/paddle-racket.jpg": "/e-commerce/static/media/paddle-racket.334c77491872efbf8270.jpg",
+    "static/media/sportshirt4.jpg": "/e-commerce/static/media/sportshirt4.a8fe9b0e299c288a95ae.jpg",
+    "static/media/sportshirttennis.jpg": "/e-commerce/static/media/sportshirttennis.fd1d0c066af0e0fbfa0c.jpg",
+    "static/media/gymball.jpg": "/e-commerce/static/media/gymball.ab35b63ed37c55e656e4.jpg",
+    "static/media/swimming-fins.jpg": "/e-commerce/static/media/swimming-fins.e3040f66cc6ba2b8e4a2.jpg",
+    "static/media/shin-guard.jpg": "/e-commerce/static/media/shin-guard.c9cf77502bfc28dd6dc3.jpg",
+    "static/media/sportshoe-2.jpg": "/e-commerce/static/media/sportshoe-2.21b3ac439d6cfc0467d1.jpg",
+    "static/media/wristband.jpg": "/e-commerce/static/media/wristband.26d07439446a267ef99c.jpg",
+    "static/media/sportsshirt.jpg": "/e-commerce/static/media/sportsshirt.8eed45abf7ed16714b82.jpg",
+    "static/media/weightball.jpg": "/e-commerce/static/media/weightball.fab261eeb83f6e7bdd84.jpg",
+    "static/media/dumbbell.jpg": "/e-commerce/static/media/dumbbell.111191ebb76b562f05be.jpg",
+    "index.html": "/e-commerce/index.html",
+    "main.1079ddaf.css.map": "/e-commerce/static/css/main.1079ddaf.css.map",
+    "main.d3769fc4.js.map": "/e-commerce/static/js/main.d3769fc4.js.map",
+    "787.d6fe38e8.chunk.js.map": "/e-commerce/static/js/787.d6fe38e8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1079ddaf.css",
+    "static/js/main.d3769fc4.js"
+  ]
+}
