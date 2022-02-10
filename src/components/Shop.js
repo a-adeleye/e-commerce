@@ -2,8 +2,11 @@ import React from "react";
 import products from "./Products";
 
 export default function Shop() {
+
+   
+
   const productElements = products.map((product) => (
-    <div className="product">
+    <div className="product" key={product.id}>
       <img className="product-image" src={product.image} alt="" />
       <h4 className="product-name">{product.name}</h4>
       <p className="product-price">{product.price}</p>

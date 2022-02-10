@@ -36,10 +36,10 @@ const products = [
     {id: "14", name: "Momen basketball top",price: "AED 99.99",rating: "★★★★☆ (316)",image: menBasketball},
     {id: "15", name: "Men soccer boot",price: "AED 12.9",rating: "★★★★☆ (6)",image: menSoccerBoot},
     {id: "16", name: "Men football shirt",price: "AED 8.8",rating: "★★★★☆ (1999)",image: menFootballShirt},
-    {id: "16", name: "Paddle racket",price: "AED 78.99",rating: "★★★★☆ (129)",image: paddleRacket},
-    {id: "16", name: "Sun Visor",price: "AED 18.8",rating: "★★★★☆ (929)",image: sunVisor},
-    {id: "16", name: "Swimming fins",price: "AED 48.99",rating: "★★★★☆ (22)",image: swimmignFins},
-    {id: "16", name: "Shin guard",price: "AED 56.99",rating: "★★★★☆ (109)",image: shinGuard},
+    {id: "17", name: "Paddle racket",price: "AED 78.99",rating: "★★★★☆ (129)",image: paddleRacket},
+    {id: "18", name: "Sun Visor",price: "AED 18.8",rating: "★★★★☆ (929)",image: sunVisor},
+    {id: "19", name: "Swimming fins",price: "AED 48.99",rating: "★★★★☆ (22)",image: swimmignFins},
+    {id: "20", name: "Shin guard",price: "AED 56.99",rating: "★★★★☆ (109)",image: shinGuard},
 ]
 
 export default products
