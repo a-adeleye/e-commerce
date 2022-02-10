@@ -15,7 +15,7 @@ export default function Header(props) {
         </a>
         <div className="cart">
           <i className="fas fa-cart-plus"></i>
-          <div className="cart--count">{props.itemNumber}</div>
+          {props.itemNumber > 0 && <div className="cart--count">{props.itemNumber}</div>}
         </div>
       </nav>
     </header>

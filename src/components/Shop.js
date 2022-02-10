@@ -1,7 +1,7 @@
 import React from "react";
 import products from "./Products";
 
-export default function Shop() {
+export default function Shop(props) {
 
    
 
@@ -11,7 +11,7 @@ export default function Shop() {
       <h4 className="product-name">{product.name}</h4>
       <p className="product-price">{product.price}</p>
       <div className="product-review">{product.rating}</div>
-      <button className="product-button">Add to cart</button>
+      <button className="product-button" onClick={props.onClick} id={product.id}>Add to cart</button>
     </div>
   ));
 
