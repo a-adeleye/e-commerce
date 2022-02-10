@@ -18,7 +18,6 @@ function App() {
       let sumArray = cart.map((item) => item.quantity * item.price);
       let total = sumArray.reduce((a, b) => a + b);
       setSubtotal((prevValue) => (prevValue = total).toFixed(2));
-      console.log(sumArray)
     }
   }
 
@@ -34,6 +33,10 @@ function App() {
   React.useEffect(() => {
     calculateTotals();
   });
+
+  React.useEffect(() => {
+    removeItemIfQuantityIsZero();
+  },[subtotal])
 
   function onAdd(e) {
     const { id } = e.target;
@@ -61,9 +64,16 @@ function App() {
   }
 
   function resetCart() {
-    setCart(prevCart => prevCart = [])
+    setCart((prevCart) => (prevCart = []));
   }
 
+  function removeItemIfQuantityIsZero() {
+    if (!cart.length) {
+      return;
+    } else {
+      setCart((prevCart) => prevCart.filter((item) => item.quantity > 0));
+    }
+  }
   const itemCount = cart.length;
   const shipping = itemCount * 5;
 
