@@ -83,10 +83,10 @@ function App() {
         <Header itemNumber={cart.length} />
         <SecondaryHeader />
         <Routes>
-          <Route path="/shop" element={<Shop onClick={addToCart} />}></Route>
-          <Route path="/" element={<Homepage />}></Route>
+          <Route path="shop" element={<Shop onClick={addToCart} />}></Route>
+          <Route path="/e-commerce" element={<Homepage />}></Route>
           <Route
-            path="/cart"
+            path="cart"
             element={
               <Cart
                 cart={cart}
@@ -100,7 +100,7 @@ function App() {
               />
             }
           ></Route>
-          <Route path="/thankyou" element={<ThankYou />}></Route>
+          <Route path="thankyou" element={<ThankYou />}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -5,7 +5,7 @@ export default function Header(props) {
   const style = { textDecoration: "none", color: "black", marginRight: "auto" };
   return (
     <header>
-      <Link to="/" style={style}>
+      <Link to="/e-commerce" style={style}>
         <h1 className="logo">tamzy</h1>
       </Link>
       <nav>
@@ -15,7 +15,7 @@ export default function Header(props) {
         <a href="#" className="nav--item">
           Login/Signup
         </a>
-        <Link to="/cart">
+        <Link to="cart">
           <div className="cart">
             <i className="fas fa-cart-plus"></i>
             {props.itemNumber > 0 && (
