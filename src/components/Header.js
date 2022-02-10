@@ -2,9 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Header(props) {
+    const style = {textDecoration: "none", color: "black", marginRight: "auto"}
   return (
     <header>
-      <h1 className="logo">tamzy</h1>
+      <Link to="/" style={style}><h1 className="logo">tamzy</h1></Link>
       <nav>
         <a href="" className="nav--item">
           Sell on tamzy
