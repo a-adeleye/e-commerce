@@ -218,8 +218,8 @@ nav {
   flex-wrap: wrap;
   gap: 1em;
   overflow-y: scroll;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .cart-item {
@@ -227,12 +227,16 @@ nav {
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
+  align-items: center;
   background-color: #ffffff;
-  padding: 1em;
+  padding: 0.5em;
+  flex-wrap: wrap;
 }
 
 .cart-product-image {
-  width: 8.1em;
+  width: 6em;
+  margin-right: 0.5em;
+  align-self: center;
 }
 
 .cart-product-image img {
@@ -258,6 +262,7 @@ nav {
 .remove-item {
   font-size: 0.9em;
   color: rgb(185, 9, 9);
+  cursor: pointer;
 }
 
 .product-quantity {
@@ -269,13 +274,27 @@ nav {
 }
 
 .large-text {
-  font-size: 1.5em;
+  font-size: 1.1em;
   font-weight: bold;
 }
 
-.quantity-change input {
+.quantity-change {
   max-width: 7em;
-  padding: 0.6em 0.5em;
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+}
+
+.quantity-change i {
+  cursor: pointer;
+}
+
+.quantity-change i:active {
+  transform: scale(0.97);
+}
+
+.quantity-change p {
+  margin: 0 0.7em;
 }
 
 .checkout {
@@ -283,13 +302,15 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 60vh;
+  height: 70vh;
   padding: 1em;
   border: 1px solid #aaa8a8;
 }
 
 .coupon {
-  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
   height: 2.5em;
   background-color: #ffffff;
   border-radius: 0.3em;
@@ -297,7 +318,6 @@ nav {
 
 .coupon input {
   padding: 1em 0.6em;
-  width: 80%;
   border: none;
   border-top-left-radius: inherit;
   border-bottom-left-radius: inherit;

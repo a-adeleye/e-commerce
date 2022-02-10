@@ -6,7 +6,7 @@ export default function Shop(props) {
     <div className="product" key={product.id}>
       <img className="product-image" src={product.image} alt="" />
       <h4 className="product-name">{product.name}</h4>
-      <p className="product-price">{product.price}</p>
+      <p className="product-price">AED{product.price}</p>
       <div className="product-review">{product.rating}</div>
       <button
         className="product-button"
