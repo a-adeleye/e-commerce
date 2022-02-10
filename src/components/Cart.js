@@ -22,7 +22,10 @@ export default function Cart(props) {
         <div className="product-quantity">
           <p className="amount">
             AED{" "}
-            <span className="large-text"> {(item.price * item.quantity).toFixed(2)} </span>
+            <span className="large-text">
+              {" "}
+              {(item.price * item.quantity).toFixed(2)}{" "}
+            </span>
           </p>
           <div className="quantity-change">
             <i
@@ -44,7 +47,21 @@ export default function Cart(props) {
 
   return (
     <section className="cart-page">
-      <div className="cart-items">{items}</div>
+      <div className="cart-items">
+        {props.cart.length < 1 ? (
+          <div>
+            <h2>Your cart is empty</h2>
+            <Link to="/shop">
+              <button className="checkout-button">
+                {" "}
+                &larr; Continue shopping
+              </button>
+            </Link>
+          </div>
+        ) : (
+          items
+        )}
+      </div>
       <div className="checkout">
         <div className="coupon">
           <input
@@ -57,7 +74,7 @@ export default function Cart(props) {
         <div className="subtotal">
           <p>Subtotal ({props.itemCount})</p>
           <p className="subtotal-amount" style={{ justifySelf: "flex-end" }}>
-            AED {(props.subtotal).toFixed(2)}
+            AED {props.subtotal}
           </p>
           <p className="shipping">Shipping</p>
           <p className="shipping-amount" style={{ justifySelf: "flex-end" }}>
@@ -66,12 +83,14 @@ export default function Cart(props) {
         </div>
         <div className="total">
           <p>Total</p>
-          <p>AED {(props.subtotal + props.shipping).toFixed(2)}</p>
+          <p>AED {props.subtotal ? (parseInt(props.subtotal) + parseInt(props.shipping)).toFixed(2) : ""}</p>
         </div>
 
-        <button className="checkout-button">CHECKOUT</button>
-        <Link to="/shop" style={{color: "#000000", fontWeight: "bold"}}>
-          <p>Continue shopping</p>
+        <Link to="/thankyou">
+          <button className="checkout-button" onClick={props.reset}>CHECKOUT</button>
+        </Link>
+        <Link to="/shop" style={{ color: "#000000", fontWeight: "bold" }}>
+          <p>Back to shopping</p>
         </Link>
       </div>
     </section>

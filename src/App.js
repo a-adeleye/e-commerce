@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import products from "./components/Products";
 import Cart from "./components/Cart";
+import ThankYou from "./components/Thank you";
 
 function App() {
   const [cart, setCart] = React.useState([]);
@@ -16,7 +17,7 @@ function App() {
     if (cart.length) {
       let sumArray = cart.map((item) => item.quantity * item.price);
       let total = sumArray.reduce((a, b) => a + b);
-      setSubtotal((prevValue) => (prevValue = total));
+      setSubtotal((prevValue) => (prevValue = total).toFixed(2));
       console.log(sumArray)
     }
   }
@@ -59,6 +60,10 @@ function App() {
     setCart(tempArray);
   }
 
+  function resetCart() {
+    setCart(prevCart => prevCart = [])
+  }
+
   const itemCount = cart.length;
   const shipping = itemCount * 5;
 
@@ -81,9 +86,11 @@ function App() {
                 subtotal={subtotal}
                 shipping={shipping}
                 itemCount={itemCount}
+                reset={resetCart}
               />
             }
           ></Route>
+          <Route path="/thankyou" element={<ThankYou />}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>

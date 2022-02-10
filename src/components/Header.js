@@ -9,19 +9,19 @@ export default function Header(props) {
         <h1 className="logo">tamzy</h1>
       </Link>
       <nav>
-        <a href="" className="nav--item">
+        <a href="#" className="nav--item">
           Sell on tamzy
         </a>
-        <a href="" className="nav--item">
+        <a href="#" className="nav--item">
           Login/Signup
         </a>
         <Link to="/cart">
-        <div className="cart">
-          <i className="fas fa-cart-plus"></i>
-          {props.itemNumber > 0 && (
-            <div className="cart--count">{props.itemNumber}</div>
-          )}
-        </div>
+          <div className="cart">
+            <i className="fas fa-cart-plus"></i>
+            {props.itemNumber > 0 && (
+              <div className="cart--count">{props.itemNumber}</div>
+            )}
+          </div>
         </Link>
       </nav>
     </header>
@@ -29,29 +29,38 @@ export default function Header(props) {
 }
 
 export function SecondaryHeader() {
+  const linkStyle = {
+    textDecoration: "none",
+    color: "#000000",
+    marginRight: "3em",
+    padding: "0.5em 1em 0.3em",
+    fontSize: "0.8em",
+    transition: "0.2s",
+  };
+
   return (
     <nav className="secondary-nav">
-      <a href="" className="secondary-nav--item">
+      <Link to="/shop" className='secondary-nav--item'>
         <span>&#9781;</span> All categories
-      </a>
-      <a href="" className="secondary-nav--item">
+      </Link>
+      <Link to="/shop" className='secondary-nav--item'>
         Sport wears
-      </a>
-      <a href="" className="secondary-nav--item">
+      </Link>
+      <Link to="/shop" className='secondary-nav--item'>
         Gym equipments
-      </a>
-      <a href="" className="secondary-nav--item">
+      </Link>
+      <Link to="/shop" className='secondary-nav--item'>
         Sport shoes
-      </a>
-      <a href="" className="secondary-nav--item">
+      </Link>
+      <Link to="/shop" className='secondary-nav--item'>
         Sport watches
-      </a>
-      <a href="" className="secondary-nav--item">
+      </Link>
+      <Link to="/shop" className='secondary-nav--item'>
         Sneakers
-      </a>
-      <a href="" className="secondary-nav--item">
+      </Link>
+      <Link to="/shop" className='secondary-nav--item'>
         Trainers
-      </a>
+      </Link>
     </nav>
   );
 }
