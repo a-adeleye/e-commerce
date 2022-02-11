@@ -5,7 +5,7 @@ export default function Header(props) {
   const style = { textDecoration: "none", color: "black", marginRight: "auto" };
   return (
     <header>
-      <Link to="/e-commerce" style={style}>
+      <Link to="/" style={style}>
         <h1 className="logo">tamzy</h1>
       </Link>
       <nav>

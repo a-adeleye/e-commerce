@@ -79,12 +79,12 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/e-commerce">
         <Header itemNumber={cart.length} />
         <SecondaryHeader />
         <Routes>
           <Route path="shop" element={<Shop onClick={addToCart} />}></Route>
-          <Route path="/e-commerce" element={<Homepage />}></Route>
+          <Route path="/" element={<Homepage />}></Route>
           <Route
             path="cart"
             element={
